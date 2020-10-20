@@ -1,0 +1,27 @@
+<form name="DataList">
+    <div>
+        <button type="button" id="order" data-toggle="order" title="order" class="btn btn-primary buttongroup"
+            (click)="PostGroup()">Imoprt Group Data</button>
+        <button type="button" id="package" data-toggle="package" title="package" class="btn btn-primary buttongroup"
+            (click)="PostPackage()">Imoprt Package Data</button>
+        <button type="button" id="tag" data-toggle="tag" title="tag" class="btn btn-primary buttongroup"
+            (click)="PostTag()">Imoprt Tag Data</button>
+    </div>
+    <div>
+        <label class="titlelabel">{{title}}</label>
+    </div>
+    <div>
+        <table datatable [dtOptions]="dtOptions" class="row-border hover">
+            <thead>
+                <tr>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of ExploreData">
+                    <td>{{ data.Name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </form>

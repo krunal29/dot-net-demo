@@ -1,0 +1,13 @@
+Please follow following steps for run application.
+
+For Backend
+Step 1: Find "DotNetDemo_Script.sql" script and run in your sql server.
+Step 2: Open Backend project in VisualStudio.
+Step 3: Set connection string in DotNetDemo.API project > Connections.config file.
+Step 4: Build and run backend project.
+
+For Frontend
+Step 1: Open Froentend project in VS code.
+Step 2: Install node module using "npm install" command.
+Step 3: Update server url to backend url if needed in "dataservice.service.ts" file.
+Step 4: Use "ng serve" command for run application.
